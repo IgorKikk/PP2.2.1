@@ -45,7 +45,10 @@ public class MainApp {
          System.out.println("Car = "+user.getCar().toString());
          System.out.println();
       }
-      System.out.println("\nUser with car" + car3.toString() + " is:\n" + userService.getUserOfCar(car3));
+      String carModel = "Audi";
+      int series = 1;
+      System.out.println("\nUser with car " + carModel + " " + Integer.toString(series) +
+              " is:\n" + userService.getUser("Audi", 1));
 
       context.close();
    }
